@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Tahereh (Tara) Jamshidi - Board-certified Rheumatologist in Washington, DC. Expert care for arthritis, autoimmune diseases, and rheumatic conditions. Accepting new patients at Georgetown University Hospital and DC VA Medical Center.">
+    <meta name="keywords" content="rheumatologist DC, Dr Tahereh Jamshidi, Dr Tara Jamshidi, rheumatoid arthritis doctor, autoimmune disease specialist, Georgetown rheumatology, Washington DC rheumatologist">
+    <title>Dr. Tahereh Jamshidi, Rheumatologist | Washington, DC</title>
+    
+    <!-- Schema.org Physician Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Dr. Tahereh Jamshidi",
+      "alternateName": "Dr. Tara Jamshidi",
+      "image": "images/dr-jamshidi-photo.jpg",
+      "url": "https://drtaherehjamshidi.com",
+      "telephone": "+1-202-XXX-XXXX",
+      "email": "t.jamshidi@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3800 Reservoir Road NW",
+        "addressLocality": "Washington",
+        "addressRegion": "DC",
+        "postalCode": "20007",
+        "addressCountry": "US"
+      },
+      "medicalSpecialty": "Rheumatology",
+      "availableService": {
+        "@type": "MedicalProcedure",
+        "name": "Rheumatology Services"
+      },
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "Georgetown University Hospital"
+        },
+        {
+          "@type": "Organization",
+          "name": "DC VA Medical Center"
+        }
+      ],
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "MedStar Georgetown University Hospital",
+          "url": "https://www.medstarhealth.org"
+        },
+        {
+          "@type": "Organization",
+          "name": "Georgetown University School of Medicine"
+        },
+        {
+          "@type": "Organization",
+          "name": "Rheumatism Society of the District of Columbia"
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/tahereh-tara-jamshidi-07312694",
+        "https://www.medstarhealth.org/education/fellowship-programs/rheumatology/faculty",
+        "https://health.usnews.com/doctors/tahereh-jamshidi-806450",
+        "https://doctor.webmd.com/doctor/tahereh-jamshidi-ed43c23a-bf4a-4a53-b646-bd665251a7f7-overview"
+      ],
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Georgetown University Hospital - Rheumatology Fellowship"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "University of Tennessee Health Science Center - Internal Medicine"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Shahid Beheshti University of Medical Sciences"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Board Certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "American Board of Internal Medicine - Rheumatology"
+          }
+        }
+      ],
+      "award": [
+        "2018 Washingtonian Top Doctors",
+        "Teaching Excellence Award - Providence Hospital",
+        "Annual Rheumatology Fellows Forum Poster Award"
+      ]
+    }
+    </script>
+
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Dr. Tahereh Jamshidi - Rheumatology",
+      "image": "images/dr-jamshidi-photo.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3800 Reservoir Road NW",
+        "addressLocality": "Washington",
+        "addressRegion": "DC",
+        "postalCode": "20007",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 38.9072,
+        "longitude": -77.0369
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "telephone": "+1-202-XXX-XXXX",
+      "priceRange": "$$",
+      "acceptsReservations": "True"
+    }
+    </script>
+
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #1e40af;
+            --secondary-color: #0ea5e9;
+            --accent-color: #3b82f6;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: var(--white);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 0.625rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #1e3a8a;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: var(--white);
+            padding: 5rem 2rem;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+        }
+
+        .hero-text p {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.7;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            margin-bottom: 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .button-primary {
+            background: var(--white);
+            color: var(--primary-color);
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-block;
+        }
+
+        .button-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .button-secondary {
+            background: transparent;
+            color: var(--white);
+            padding: 1rem 2rem;
+            border: 2px solid var(--white);
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+            display: inline-block;
+        }
+
+        .button-secondary:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 1rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        /* Accepting Patients Banner */
+        .accepting-banner {
+            background: #10b981;
+            color: var(--white);
+            text-align: center;
+            padding: 1rem 2rem;
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 1.125rem;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .credentials {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-top: 2rem;
+        }
+
+        .credentials h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .credentials ul {
+            list-style: none;
+        }
+
+        .credentials li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .credentials li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        /* Locations */
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .location-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .location-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .location-info {
+            margin-top: 1rem;
+        }
+
+        .location-info p {
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--bg-light);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+        }
+
+        .contact-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 3rem 2rem 1rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            display: block;
+            margin: 0.5rem 0;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Dr. Tahereh Jamshidi</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Book Appointment</a>
+        </nav>
+    </header>
+
+    <!-- Accepting Patients Banner -->
+    <div class="accepting-banner">
+        ✓ Currently Accepting New Patients
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="badge">Board-Certified Rheumatologist</div>
+                <h1>Dr. Tahereh (Tara) Jamshidi</h1>
+                <p class="subtitle">Expert Care for Arthritis & Autoimmune Diseases</p>
+                <p>Providing compassionate, evidence-based rheumatology care in Washington, DC. Assistant Professor of Medicine at Georgetown University with over a decade of experience treating complex rheumatic conditions.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="button-primary">Schedule Consultation</a>
+                    <a href="#services" class="button-secondary">View Services</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/dr-jamshidi-photo.jpg" alt="Dr. Tahereh Jamshidi, Rheumatologist in Washington DC">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Dr. Jamshidi</h2>
+            <p class="section-subtitle">Dedicated to providing exceptional rheumatology care with a patient-centered approach</p>
+            
+            <div class="about-grid">
+                <div>
+                    <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                        Dr. Tahereh Jamshidi, known to her patients as Dr. Tara Jamshidi, is a board-certified rheumatologist with extensive experience in diagnosing and treating autoimmune and inflammatory conditions. She currently serves as Assistant Professor of Medicine at Georgetown University and provides care at both Georgetown University Hospital and the DC VA Medical Center.
+                    </p>
+                    <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                        With over 14 years of clinical experience, Dr. Jamshidi has dedicated her career to helping patients manage complex rheumatic diseases including rheumatoid arthritis, lupus, scleroderma, and various autoimmune conditions. She takes pride in developing personalized treatment plans that improve quality of life while minimizing side effects.
+                    </p>
+                    <p style="font-size: 1.125rem; line-height: 1.8;">
+                        Dr. Jamshidi previously served as Chief of Rheumatology at Providence Hospital and held leadership positions in the Rheumatism Society of the District of Columbia, including serving as President from 2020-2021. She has been recognized as a Washingtonian Top Doctor and received multiple teaching excellence awards.
+                    </p>
+                </div>
+                <div>
+                    <div class="credentials">
+                        <h3>Education & Training</h3>
+                        <ul>
+                            <li>MD, Shahid Beheshti University of Medical Sciences (Graduated with Honor)</li>
+                            <li>Internal Medicine Residency, University of Tennessee Health Science Center</li>
+                            <li>Rheumatology Fellowship, Georgetown University Hospital</li>
+                        </ul>
+                    </div>
+                    <div class="credentials">
+                        <h3>Board Certifications</h3>
+                        <ul>
+                            <li>American Board of Internal Medicine</li>
+                            <li>American Board of Internal Medicine - Rheumatology</li>
+                            <li>DC Medical License</li>
+                        </ul>
+                    </div>
+                    <div class="credentials">
+                        <h3>Professional Affiliations</h3>
+                        <ul>
+                            <li>Georgetown University School of Medicine</li>
+                            <li>MedStar Georgetown University Hospital</li>
+                            <li>DC VA Medical Center</li>
+                            <li>Rheumatism Society of DC (Past President)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" style="background: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title">Conditions Treated</h2>
+            <p class="section-subtitle">Comprehensive care for a wide range of rheumatic and autoimmune diseases</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🦴</div>
+                    <h3>Rheumatoid Arthritis</h3>
+                    <p>Expert management of RA using the latest biologics and disease-modifying treatments to reduce inflammation and prevent joint damage.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🦋</div>
+                    <h3>Lupus (SLE)</h3>
+                    <p>Comprehensive care for systemic lupus erythematosus with personalized treatment plans to manage symptoms and prevent flares.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💪</div>
+                    <h3>Scleroderma</h3>
+                    <p>Specialized treatment for systemic sclerosis and related conditions, including RNAP III scleroderma management.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔬</div>
+                    <h3>Psoriatic Arthritis</h3>
+                    <p>Advanced therapies for psoriatic arthritis to control joint inflammation and skin manifestations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Gout & Pseudogout</h3>
+                    <p>Effective treatment for crystal-induced arthritis with both acute management and long-term prevention strategies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Vasculitis</h3>
+                    <p>Expert diagnosis and management of various forms of blood vessel inflammation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🩺</div>
+                    <h3>Osteoarthritis</h3>
+                    <p>Comprehensive treatment plans including medications, joint injections, and lifestyle modifications.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💉</div>
+                    <h3>Joint Injections</h3>
+                    <p>In-office arthrocentesis and therapeutic joint injections for rapid symptom relief.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Autoimmune Diseases</h3>
+                    <p>Diagnosis and treatment of various autoimmune conditions including Sjögren's syndrome, polymyositis, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations">
+        <div class="container">
+            <h2 class="section-title">Practice Locations</h2>
+            <p class="section-subtitle">Conveniently located in Washington, DC</p>
+            
+            <div class="locations-grid">
+                <div class="location-card">
+                    <h3>Georgetown University Hospital</h3>
+                    <div class="location-info">
+                        <p>📍 3800 Reservoir Road NW<br>Washington, DC 20007</p>
+                        <p>☎️ Contact through Georgetown scheduling</p>
+                        <p>🏥 MedStar Georgetown University Hospital</p>
+                        <p style="margin-top: 1rem; color: var(--text-light);">Assistant Professor of Medicine providing outpatient rheumatology consultations and care.</p>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <h3>DC VA Medical Center</h3>
+                    <div class="location-info">
+                        <p>📍 50 Irving Street NW<br>Washington, DC 20422</p>
+                        <p>☎️ VA patient scheduling</p>
+                        <p>🏥 Washington DC Veterans Affairs</p>
+                        <p style="margin-top: 1rem; color: var(--text-light);">Providing comprehensive rheumatology care to our nation's veterans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" style="background: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Common questions about rheumatology care and appointments</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        When should I see a rheumatologist?
+                    </div>
+                    <div class="faq-answer">
+                        You should consider seeing a rheumatologist if you experience persistent joint pain, swelling, or stiffness lasting more than a few weeks, especially if it affects multiple joints. Other reasons include positive autoimmune blood tests, unexplained fatigue with joint symptoms, family history of autoimmune disease, or if your primary care doctor suspects a rheumatic condition.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What should I bring to my first appointment?
+                    </div>
+                    <div class="faq-answer">
+                        Please bring a list of current medications, previous medical records related to your condition, recent lab results or imaging studies, insurance information, and a list of your symptoms including when they started and what makes them better or worse. It's also helpful to write down any questions you have ahead of time.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you accept new patients?
+                    </div>
+                    <div class="faq-answer">
+                        Yes, Dr. Jamshidi is currently accepting new patients at both Georgetown University Hospital and DC VA Medical Center. Referrals from your primary care physician are typically required. Contact the scheduling office at your preferred location to book an appointment.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What insurance plans do you accept?
+                    </div>
+                    <div class="faq-answer">
+                        Insurance accepted varies by location. Georgetown University Hospital accepts most major insurance plans. The DC VA Medical Center serves eligible veterans through VA benefits. Please contact the scheduling office at your preferred location to verify your specific insurance coverage.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long does a typical appointment last?
+                    </div>
+                    <div class="faq-answer">
+                        Initial consultations typically last 45-60 minutes to allow for a comprehensive evaluation. Follow-up appointments are usually 20-30 minutes. Dr. Jamshidi takes time to listen to your concerns, perform a thorough examination, and develop a personalized treatment plan.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What makes Dr. Jamshidi's approach unique?
+                    </div>
+                    <div class="faq-answer">
+                        Dr. Jamshidi combines evidence-based medicine with a patient-centered approach. She stays current with the latest research and treatment options while taking time to understand each patient's unique circumstances, goals, and concerns. Her experience in both academic medicine and clinical practice ensures comprehensive, cutting-edge care.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Schedule an Appointment</h2>
+            <p class="section-subtitle">Take the first step toward better joint and autoimmune health</p>
+            
+            <div class="contact-grid">
+                <div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>Georgetown University Hospital</h3>
+                            <p>For appointments at Georgetown, please contact the MedStar scheduling office or ask your primary care physician for a referral.</p>
+                            <p style="margin-top: 1rem;"><strong>Address:</strong><br>
+                            3800 Reservoir Road NW<br>
+                            Washington, DC 20007</p>
+                        </div>
+                        <div class="contact-item" style="margin-top: 2rem;">
+                            <h3>DC VA Medical Center</h3>
+                            <p>Veterans can schedule through the VA patient scheduling system or by contacting the DC VA Medical Center directly.</p>
+                            <p style="margin-top: 1rem;"><strong>Address:</strong><br>
+                            50 Irving Street NW<br>
+                            Washington, DC 20422</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>Professional Profile Links</h3>
+                            <ul style="list-style: none; margin-top: 1rem;">
+                                <li style="margin: 0.75rem 0;"><a href="https://www.medstarhealth.org/education/fellowship-programs/rheumatology/faculty" target="_blank" style="color: var(--primary-color); text-decoration: none;">→ MedStar Faculty Profile</a></li>
+                                <li style="margin: 0.75rem 0;"><a href="https://health.usnews.com/doctors/tahereh-jamshidi-806450" target="_blank" style="color: var(--primary-color); text-decoration: none;">→ US News Profile</a></li>
+                                <li style="margin: 0.75rem 0;"><a href="https://doctor.webmd.com/doctor/tahereh-jamshidi-ed43c23a-bf4a-4a53-b646-bd665251a7f7-overview" target="_blank" style="color: var(--primary-color); text-decoration: none;">→ WebMD Profile</a></li>
+                                <li style="margin: 0.75rem 0;"><a href="https://www.linkedin.com/in/tahereh-tara-jamshidi-07312694" target="_blank" style="color: var(--primary-color); text-decoration: none;">→ LinkedIn Profile</a></li>
+                            </ul>
+                        </div>
+                        <div class="contact-item" style="margin-top: 2rem;">
+                            <h3>Office Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM<br>
+                            Saturday - Sunday: Closed</p>
+                            <p style="margin-top: 1rem; color: var(--text-light); font-size: 0.875rem;">Hours may vary by location. Please contact the specific office for exact scheduling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Dr. Tahereh (Tara) Jamshidi</h3>
+                <p style="margin-top: 1rem; opacity: 0.8;">Board-Certified Rheumatologist<br>
+                Assistant Professor of Medicine<br>
+                Georgetown University</p>
+                <p style="margin-top: 1rem; opacity: 0.6; font-size: 0.875rem;">Providing expert rheumatology care in Washington, DC since 2013.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Professional Profiles</h3>
+                <ul>
+                    <li><a href="https://www.medstarhealth.org/education/fellowship-programs/rheumatology/faculty" target="_blank">MedStar Profile</a></li>
+                    <li><a href="https://health.usnews.com/doctors/tahereh-jamshidi-806450" target="_blank">US News</a></li>
+                    <li><a href="https://doctor.webmd.com/doctor/tahereh-jamshidi-ed43c23a-bf4a-4a53-b646-bd665251a7f7-overview" target="_blank">WebMD</a></li>
+                    <li><a href="https://www.linkedin.com/in/tahereh-tara-jamshidi-07312694" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dr. Tahereh Jamshidi. All rights reserved. | <a href="#" style="color: inherit;">Privacy Policy</a> | <a href="#" style="color: inherit;">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // FAQ accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isOpen = answer.style.display === 'block';
+                
+                // Close all answers
+                document.querySelectorAll('.faq-answer').forEach(a => {
+                    a.style.display = 'none';
+                });
+                
+                // Toggle current answer
+                answer.style.display = isOpen ? 'none' : 'block';
+            });
+        });
+
+        // Initialize FAQs as closed
+        document.querySelectorAll('.faq-answer').forEach(answer => {
+            answer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
