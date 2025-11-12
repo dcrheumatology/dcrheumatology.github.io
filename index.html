@@ -473,8 +473,10 @@
 
         .contact-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 4rem;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .contact-info {
@@ -809,27 +811,17 @@
                             <p style="margin-top: 1rem;"><strong>Address:</strong><br>
                             50 Irving Street NW<br>
                             Washington, DC 20422</p>
+                            <div style="margin-top: 2rem;">
+                                <h3>Office Hours</h3>
+                                <p>Monday - Friday: 8:00 AM - 5:00 PM<br>
+                                Saturday - Sunday: Closed</p>
+                                <p style="margin-top: 1rem; color: var(--text-light); font-size: 0.875rem;">Hours may vary. Please contact the office for exact scheduling.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <h3>Professional Profile Links</h3>
-                            <ul style="list-style: none; margin-top: 1rem;">
-                                <li style="margin: 0.75rem 0;"><a href="https://www.medstarhealth.org/education/fellowship-programs/rheumatology/faculty" target="_blank" style="color: var(--primary-color); text-decoration: none;">→ MedStar Faculty Profile</a></li>
-                                <li style="margin: 0.75rem 0;"><a href="https://health.usnews.com/doctors/tahereh-jamshidi-806450" target="_blank" style="color: var(--primary-color); text-decoration: none;">→ US News Profile</a></li>
-                                <li style="margin: 0.75rem 0;"><a href="https://doctor.webmd.com/doctor/tahereh-jamshidi-ed43c23a-bf4a-4a53-b646-bd665251a7f7-overview" target="_blank" style="color: var(--primary-color); text-decoration: none;">→ WebMD Profile</a></li>
-                                <li style="margin: 0.75rem 0;"><a href="https://www.linkedin.com/in/tahereh-tara-jamshidi-07312694" target="_blank" style="color: var(--primary-color); text-decoration: none;">→ LinkedIn Profile</a></li>
-                            </ul>
-                        </div>
-                        <div class="contact-item" style="margin-top: 2rem;">
-                            <h3>Office Hours</h3>
-                            <p>Monday - Friday: 8:00 AM - 5:00 PM<br>
-                            Saturday - Sunday: Closed</p>
-                            <p style="margin-top: 1rem; color: var(--text-light); font-size: 0.875rem;">Hours may vary. Please contact the office for exact scheduling.</p>
-                        </div>
-                    </div>
+                    <!-- Removed Professional Profile Links - available in footer -->
                 </div>
             </div>
         </div>
